@@ -16,8 +16,6 @@ A lightweight Blazor WebAssembly frontend that interacts with a C# API backend, 
   - Uses dependency injection, controllers, Swagger/OpenAPI  
 - **Client**  
   - Blazor WebAssembly project calling the API using `HttpClient` 
-- **Shared**  
-  - Models (`Item`, `CreateItemDto`, etc.) shared between both projects
 
 ---
 
