@@ -1,0 +1,51 @@
+@page "/"
+@using System.Text.Json
+@using CarOffer.Frontend.Models
+
+@inject HttpClient Http
+
+<h3>Compare Car Offers</h3>
+
+@if (_cars == null)
+{
+    <spinner />
+}
+else
+{
+    @foreach (var car in _cars)
+    {
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5>@car.Make @car.Model</h5>
+                <p><strong>Feature:</strong> @car.UniqueFeature</p>
+                <div class="row">
+                    @if(car.Offers != null)
+                    {
+                        @foreach (var offer in car.Offers)
+                        {
+                            <div class="col-md-6">
+                                <div class="border p-2 mb-2">
+                                    <p><strong>Dealer:</strong> @offer.Dealership.Name</p>
+                                    <p><strong>Price:</strong> £@offer.Price</p>
+                                    <p><strong>Gift:</strong> @offer.PromotionalGift</p>
+                                    <NavLink class="btn btn-primary" href=@($"/details/{car.Id}?offerId={offer.Id}")>Proceed</NavLink>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    }
+}
+
+@code {
+    private List<Car>? _cars;
+
+    protected override async Task OnInitializedAsync()
+    {
+       
+        _cars = await Http.GetFromJsonAsync<List<Car>>("api/car");
+    }
+    
+}

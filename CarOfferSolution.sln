@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarOffer.API", "CarOffer.API\CarOffer.API.csproj", "{842FEC26-3A9D-4513-8A05-2B2136427EBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{7EB7767D-5BEC-43DE-8CBE-C65CC900B6B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{D8C14027-7089-4F3B-A3AE-FCB5D69FCF4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarOffer.Frontend", "CarOffer.Frontend\CarOffer.Frontend.csproj", "{C2554CAA-9E08-42F4-A9EA-84336A4E5202}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{842FEC26-3A9D-4513-8A05-2B2136427EBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{842FEC26-3A9D-4513-8A05-2B2136427EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{842FEC26-3A9D-4513-8A05-2B2136427EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{842FEC26-3A9D-4513-8A05-2B2136427EBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2554CAA-9E08-42F4-A9EA-84336A4E5202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2554CAA-9E08-42F4-A9EA-84336A4E5202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2554CAA-9E08-42F4-A9EA-84336A4E5202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2554CAA-9E08-42F4-A9EA-84336A4E5202}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{842FEC26-3A9D-4513-8A05-2B2136427EBE} = {7EB7767D-5BEC-43DE-8CBE-C65CC900B6B2}
+		{C2554CAA-9E08-42F4-A9EA-84336A4E5202} = {D8C14027-7089-4F3B-A3AE-FCB5D69FCF4C}
+	EndGlobalSection
+EndGlobal

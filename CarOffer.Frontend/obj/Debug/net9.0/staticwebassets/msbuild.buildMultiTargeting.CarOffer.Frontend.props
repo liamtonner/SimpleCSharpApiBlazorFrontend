@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CarOffer.Frontend.props" />
+</Project>
